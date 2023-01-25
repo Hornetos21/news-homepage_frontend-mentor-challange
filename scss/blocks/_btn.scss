@@ -1,0 +1,14 @@
+.btn {
+  width: 186px;
+  height: 48px;
+  background: $red;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  color: $wht;
+  letter-spacing: 4px;
+  font-size: 14px;
+  &:hover {
+    background: $wd;
+  }
+}

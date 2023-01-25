@@ -1,0 +1,13 @@
+.title {
+  font-size: 20px;
+  color: $wht;
+  font-weight: 700;
+  &_news {
+    font-size: 18px;
+    font-weight: 800;
+    color: $wd;
+    &:hover {
+      color: $red;
+    }
+  }
+}

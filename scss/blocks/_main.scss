@@ -1,0 +1,57 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  min-height: 510px;
+}
+.main-block {
+  max-width: 732px;
+  margin-right: 30px;
+  img {
+    width: 100%;
+  }
+  &__subblock {
+    display: flex;
+    margin-top: 30px;
+  }
+  &__header {
+    width: 50%;
+  }
+  &__subhead {
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 15px;
+
+    p {
+      line-height: 24px;
+      margin-bottom: 36px;
+    }
+  }
+}
+.aside {
+  max-width: 350px;
+  background-color: hsl(240, 100%, 5%);
+  padding: 30px 35px 0 25px;
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: $org;
+    margin-bottom: 30px;
+  }
+
+  hr {
+    color: $gb;
+    margin: 28px 0;
+  }
+  p {
+    color: $gb;
+  }
+  a {
+    color: $gb;
+    h3 {
+      &:hover {
+        color: $org;
+      }
+    }
+  }
+}

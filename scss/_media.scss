@@ -1,0 +1,39 @@
+@media screen and (max-width: 1310px) {
+  .container {
+    padding: 0 10vw;
+  }
+  .main-block {
+    &__subblock {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__header {
+      width: 100%;
+      margin-bottom: 26px;
+    }
+    &__subhead {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mini-block {
+    flex-direction: column;
+    &__img {
+      margin: 0 auto;
+    }
+    article {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+    &__num {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    padding: 0 5vw;
+  }
+}
