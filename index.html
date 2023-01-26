@@ -18,22 +18,37 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
+    <!-- Nav Block -->
     <header class="container">
       <nav class="menu">
-        <a href="#"><img src="img/logo.svg" alt="logo" class="menu__logo" /></a>
+        <a href="/"><img src="img/logo.svg" alt="logo" class="menu__logo" /></a>
+        <div class="menu__burger"></div>
         <ul class="menu__list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
         </ul>
+        <div class="overlay hide"></div>
       </nav>
     </header>
+    <!-- Main -->
     <main class="container">
       <section class="main">
-        <div class="main-block">
-          <img src="img/image-web-3-desktop.jpg" alt="web3" class="main__img" />
+        <!-- Main Article -->
+        <article class="main-block">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="img/image-web-3-mobile.jpg"
+            />
+            <img
+              src="img/image-web-3-desktop.jpg"
+              alt="web3"
+              class="main__img"
+            />
+          </picture>
           <div class="main-block__subblock">
             <div class="main-block__header">
               <h1>The Bright Future of Web 3.0?</h1>
@@ -47,9 +62,9 @@
               <button class="btn">Read more</button>
             </div>
           </div>
-        </div>
-
-        <div class="aside">
+        </article>
+        <!-- Secondary News -->
+        <section class="aside">
           <h2>New</h2>
           <article>
             <a class="aside__link" href="#"
@@ -77,55 +92,57 @@
               what that means.
             </p>
           </article>
-        </div>
+        </section>
       </section>
-
-      <section class="news">
-        <div class="mini-block">
+      <!-- Other Articles -->
+      <!-- <section class="news">
+        <article class="mini-block">
           <div class="mini-block__img">
             <img src="img/image-retro-pcs.jpg" alt="retro" />
           </div>
-          <article>
+          <div class="mini-block__descr">
             <div class="mini-block__num">01</div>
             <a href="#"><h3 class="title title_news">Reviving Retro PCs</h3></a>
             <p>What happens when old PCs are given modern upgrades?</p>
-          </article>
-        </div>
+          </div>
+        </article>
 
-        <div class="mini-block">
+        <article class="mini-block">
           <div class="mini-block__img">
             <img src="img/image-top-laptops.jpg" alt="laptops" />
           </div>
-          <article>
+          <div class="mini-block__descr">
             <div class="mini-block__num">02</div>
             <a href="#"
               ><h3 class="title title_news">Top 10 Laptops of 2022</h3></a
             >
             <p>Our best picks for various needs and budgets.</p>
-          </article>
-        </div>
+          </div>
+        </article>
 
-        <div class="mini-block">
+        <article class="mini-block">
           <div class="mini-block__img">
             <img src="img/image-gaming-growth.jpg" alt="gaming" />
           </div>
-          <article>
+          <div class="mini-block__descr">
             <div class="mini-block__num">03</div>
             <a href="#"
               ><h3 class="title title_news">The Growth of Gaming</h3></a
             >
             <p>How the pandemic has sparked fresh opportunities.</p>
-          </article>
-        </div>
-      </section>
+          </div>
+        </article>
+      </section> -->
     </main>
-    <footer>
+    <!-- Footer -->
+    <!-- <footer>
       <div class="attribution container">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Igor Shapovalov</a>.
       </div>
-    </footer>
+    </footer> -->
   </body>
+  <script src="script.js"></script>
 </html>
