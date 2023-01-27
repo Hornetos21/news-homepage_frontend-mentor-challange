@@ -1,6 +1,3 @@
-/* 375px */
-@media screen and (min-width: 375px) {
-}
 /* 768px */
 @media screen and (min-width: 768px) {
   .container {
@@ -16,61 +13,94 @@
   }
   .main {
     flex-direction: row;
+    justify-content: flex-start;
     min-height: 51rem;
+    margin-top: 5rem;
+  }
+  .main-block {
+    margin-right: 3rem;
+  }
+  .aside {
+    margin-top: 0;
+  }
+}
+/* 991px */
+@media screen and (min-width: 991px) {
+  h1 {
+    font-size: 5.6rem;
+    line-height: 1.1;
   }
   .main-block {
     max-width: 73.2rem;
+
+    &__header {
+      width: 50%;
+    }
+    &__subblock {
+      flex-direction: row;
+      margin-top: 3rem;
+    }
+    &__subhead {
+      width: 50%;
+      padding-right: 2rem;
+      padding-left: 1.5rem;
+
+      p {
+        line-height: 2.4rem;
+        margin-bottom: 3.6rem;
+      }
+    }
+  }
+  .news {
+    flex-direction: row;
+    padding: 7rem 0 10rem 0;
+  }
+  .mini-block {
+    width: 35.2rem;
     margin-right: 3rem;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 1200px) {
   .container {
+    padding: 0 9rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1379px) {
+  .container {
+    max-width: 144rem;
     padding: 0 16.5rem;
   }
+  .menu {
+    &__list-top {
+      li {
+        font-size: 1.7rem;
+        margin-left: 3.4rem;
+      }
+    }
+  }
+  h1 {
+    line-height: 1;
+  }
+  .main-block {
+    &__subhead {
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+  .aside {
+    padding: 2.5rem 2.5rem 2.2rem 2.2rem;
+    max-width: 35rem;
+    h2 {
+      font-size: 4rem;
+    }
+    article {
+      margin-top: 3rem;
+      margin-bottom: 3.1rem;
+    }
+  }
 }
-
-// @media screen and (max-width: 1310px) {
-//   .container {
-//     padding: 0 10vw;
-//   }
-//   .main-block {
-//     &__subblock {
-//       flex-direction: column;
-//       justify-content: center;
-//     }
-//     &__header {
-//       width: 100%;
-//       margin-bottom: 26px;
-//     }
-//     &__subhead {
-//       width: 100%;
-//       padding-left: 0;
-//     }
-//   }
-// }
-// @media screen and (max-width: 1200px) {
-// .container {
-//   max-width: 144rem;
-
-//   padding: 0 16.5rem;
-//   margin: 0 auto;
-// }
-//   .mini-block {
-//     flex-direction: column;
-//     &__img {
-//       margin: 0 auto;
-//     }
-//     article {
-//       margin-left: 0;
-//       margin-top: 15px;
-//     }
-//     &__num {
-//       text-align: center;
-//     }
-//   }
-// }
-// @media screen and (max-width: 991px) {
-//   .container {
-//     padding: 0 5vw;
-//   }
-// }

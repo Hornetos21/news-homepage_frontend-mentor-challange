@@ -28,8 +28,9 @@
     right: -100%;
     width: 68%;
     height: 100vh;
-    background-color: #fefdf9;
+    background-color: $wht;
     padding-top: 15rem;
+    transition: 0.4s all ease;
     &_active {
       right: 0;
       z-index: 2;
@@ -37,9 +38,7 @@
     li {
       margin: 2.5rem;
       font-size: 1.8rem;
-      // margin-left: 2.5rem;
       color: $dgb;
-      cursor: pointer;
       &:hover {
         color: $org;
       }
@@ -56,9 +55,23 @@
       margin-left: 4rem;
       color: $dgb;
       cursor: pointer;
+      transition: color 0.5s ease;
       &:hover {
-        color: $org;
+        color: $red;
       }
     }
   }
+}
+.overlay {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: $dgb;
+}
+.hide {
+  display: none;
 }
